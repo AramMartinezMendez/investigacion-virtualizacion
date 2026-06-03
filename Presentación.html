@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INVESTIGACIÓN EN TIC</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/reveal.css">
+    <!-- Aqui deberia ser el mismo de Webjeda Slides......deberia xd) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/theme/black.css">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            
+
+
+            <!-- hoja PORTADA -->
+<section>
+    <h1>Investigación TIC</h1>
+    <h3>Solución estratificada de problemas EN TIC</h3>
+    <p> AEJMM | 02/06/2026</p>
+</section>
+
+<!-- HOJA 2 CONTENIDO -->
+<section>
+    <h2>Temas</h2>
+    <ul>
+        <li>Virtualización por interpretación pura</li>
+        <li>Virtualización por recompilación dinámica</li>
+        <li>Virtualización por hipervisión (bare metal)</li>
+    </ul>
+</section>
+
+<!-- hoja 3 INTERPRETACIÓN PURA -->
+<section>
+    <h3>Interpretación pura</h3>
+    <p><strong>Características:</strong> Emula todo el hardware por software, sin modificar el código invitado. Es el método más lento.</p>
+    <p><strong>Casos de uso:</strong> Emular sistemas antiguos, depuración de bajo nivel, entornos altamente aislados.</p>
+    <p><strong>Ejemplo:</strong> QEMU (modo TCG), emuladores de consolas retro.</p>
+</section>
+
+<!-- hoja  4 RECOMPILACIÓN DINÁMICA -->
+<section>
+    <h3>Recompilación dinámica</h3>
+    <p><strong>Características:</strong> Traduce bloques de código del sistema invitado a código nativo en tiempo real, cacheando resultados para mejorar rendimiento.</p>
+    <p><strong>Casos de uso:</strong> Máquinas virtuales de lenguajes (JVM), emulación de arquitecturas diferentes (ej. ARM en x86).</p>
+    <p><strong>Ejemplo:</strong> VirtualBox (sin aceleración por hardware), DynamoRIO, QEMU con TCG optimizado.</p>
+</section>
+
+<!-- hoja 5 HIPERVISIÓN BARE METAL -->
+<section>
+    <h3>Hipervisión (bare metal)</h3>
+    <p><strong>Características:</strong> Hipervisor Tipo 1, se ejecuta directamente sobre el hardware sin un sistema operativo anfitrión. Ofrece el máximo rendimiento y seguridad.</p>
+    <p><strong>Casos de uso:</strong> Servidores empresariales, centros de datos, entornos de nube.</p>
+    <p><strong>Ejemplo:</strong> VMware ESXi, Microsoft Hyper-V, KVM (cuando se usa con aceleración por hardware).</p>
+</section>
+
+<!-- hoja 6 COMPARATIVA RÁPIDA -->
+<section>
+    <h3>Comparativa de métodos</h3>
+    <table style="font-size: 0.8em; width: 100%;">
+        <tr>
+            <th>Método</th>
+            <th>Rendimiento</th>
+            <th>Aislamiento</th>
+        </tr>
+        <tr>
+            <td>Interpretación pura</td>
+            <td>🔴 Bajo</td>
+            <td>🟢 Alto</td>
+        </tr>
+        <tr>
+            <td>Recompilación dinámica</td>
+            <td>🟡 Medio</td>
+            <td>🟡 Medio</td>
+        </tr>
+        <tr>
+            <td>Bare metal</td>
+            <td>🟢 Alto</td>
+            <td>🟢 Muy alto</td>
+            
+        </tr>
+        <td> Postata:en casi la mayoria hay problemas de compatibilidad </td>
+    </table>
+</section>
+
+<!-- hoja 7 end -->
+<section>
+    <h2></h2>
+    <p>¡Gracias por su atención!</p>
+    <p>Repositorio para exportarlo xd</p>
+</section>
+
+
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/reveal.js"></script>
+    <script>// opciones(boton )
+
+        Reveal.initialize({
+            controls: true,   // Muestra botones de siguiente/anterior
+            progress: true,   // Muestra la barra de progreso
+            history: true,    // Habilita el historial del navegador
+            center: true      // Centra el contenido verticalmente
+        });
+    </script>
+</body>
+</html>
